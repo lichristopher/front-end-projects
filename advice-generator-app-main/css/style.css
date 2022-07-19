@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 28px;
+  background-color: var(--dark-blue);
+  color: var(--light-cyan);
+}
+
+h1 {
+  color: var(--neon-green);
+  font-size: 1rem;
+}
+
+a {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  outline: 0;
+}
+
+.card {
+  max-width: 800px;
+  background-color: var(--dark-grayish-blue);
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__generateQuote {
+  width: 70px;
+  height: 70px;
+  color: black;
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transform: translateY(50%);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn__generateQuote:hover {
+  background-color: var(--light-cyan);
+}
+
+.btn__generateQuote img {
+  width: 50%;
+}
+
+.divider {
+  width: 100%;
+}
+
+/* hr {
+  position: relative;
+}
+hr::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(50%);
+  background-color: var(--dark-grayish-blue);
+}
+*/
